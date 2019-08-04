@@ -1,0 +1,12 @@
+// Component definition: Layout-b
+.layout-b {
+  display: grid;
+  grid-template-rows: repeat(map-deep-get($layout-b, rows, number), map-deep-get($layout-b, rows, height));
+  grid-template-columns: repeat(auto-fit, minmax(map-deep-get($layout-b, columns, width), 1fr));
+  grid-gap: map-deep-get($layout-b, gap);
+  padding: map-deep-get($layout-b, padding);
+
+  &__item {
+    background-color: map-deep-get($layout-b, item, background-color);
+  }
+}

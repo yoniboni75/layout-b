@@ -1,0 +1,15 @@
+// Component config: Layout-b
+$layout-b: (
+  padding: 1.5 * $spacing,
+  rows: (
+    number: 9,
+    height: 150px
+  ),
+  columns: (
+    width: 300px
+  ),
+  gap: 1 * $spacing,
+  item: (
+    background-color: $brand-system
+  )
+);
